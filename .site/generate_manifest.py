@@ -88,7 +88,7 @@ TOPIC_RULES = [
                          r"alphafold|deepseek|\bmamba\b|softmax|layer normaliz|gelu|"
                          r"adaboost|support vector|word representation|word2vec|\brag\b|"
                          r"sequence model|state space|image (recognition|restoration)|"
-                         r"super-?resolution|adversarial|kalman"),
+                         r"super-?resolution|adversarial|kalman|intelligence"),
     ("windows", r"windows|win32|\bnt\b|\bwdf\b|\bwdm\b|pe.?coff|minifilter|\bioctl\b|"
                 r"sysinternals|msdn|microsoft|ntfs|\betw\b|windbg|\bcom\b|\bclr\b|\bwmi\b|"
                 r"component object model|\bdcom\b|\bpe\b|\bdlls?\b|winsock"),
