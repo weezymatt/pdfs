@@ -51,6 +51,8 @@ MONTHS = {
 
 # Topic rules are matched case-insensitively against the full relative path,
 # so folder names count.  A file collects every matching topic; none -> misc.
+
+# TODO: NLP, AI, Linguistics
 TOPIC_RULES = [
     ("hashing", r"hash|cuckoo|hopscotch|sha-?\d|blake2|keccak|md5|\bcrc\b|checksum"),
     ("data-structures", r"b-?trees?\b|\btries?\b|\bheaps?\b|skip list|bloom|succinct|"
@@ -63,7 +65,7 @@ TOPIC_RULES = [
                      r"rasteriz|ray ?trac|path ?trac|render|opengl|nvidia|\bgtc\b|radiance|"
                      r"\bvr\b|texture|video"),
     ("cpu-arch", r"x86|x64\b|\barm\b|risc|\bisa\b|microarchitect|\bsimd\b|\bavx\b|\bsse\d?\b|"
-                 r"branch predict|opcode|ia-32|ia-64|amd64|amd\b|itanium|instruction|intel|"
+                 r"branch predict|opcode|ia-32|ia-64|amd64|amd\b|itanium|instruction|\bintel\b|"
                  r"processor|\bcpu\b|microcode|assembly|assembler|alpha (architecture|axp)|"
                  r"\baxp\b|mips|superscalar|out-of-order|systolic|\d{2}-bit|firmware|"
                  r"\bacpi\b|\buefi\b|\bbios\b|emulat|\bvliw\b|haswell|sparc|pci ?e(xpress)?|"
