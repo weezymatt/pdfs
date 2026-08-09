@@ -76,7 +76,7 @@ TOPIC_RULES = [
                         r"\bgcc\b|linker|loader|static analys|program analys|"
                         r"value numbering|name mangling|program synthesis|"
                         r"reference counting|rewriting|coccinelle|numba|javascript|"
-                        r"ecma|shared librar"),
+                        r"ecma|shared librar|matlab"),
     ("databases", r"database|\bsql\b|oracle|postgres|\bolap\b|\boltp\b|quer(y|ies)|"
                   r"transaction|column(ar| store)|vertica|data warehouse|\bjoins?\b|"
                   r"\bindex(es|ing)?\b|\bdbms\b|hekaton|vldb|sigmod|cidr\b|relational|"
@@ -88,7 +88,9 @@ TOPIC_RULES = [
                          r"alphafold|deepseek|\bmamba\b|softmax|layer normaliz|gelu|"
                          r"adaboost|support vector|word representation|word2vec|\brag\b|"
                          r"sequence model|state space|image (recognition|restoration)|"
-                         r"super-?resolution|adversarial|kalman"),
+                         r"super-?resolution|adversarial|kalman|intelligence"),
+    ("annotation", r"annotation|\bhuman\b|hitl|preference|agreement|kappa|\binter|concensus|"
+                   r"human-in-the-loop|labeling|rater|reliability"),
     ("windows", r"windows|win32|\bnt\b|\bwdf\b|\bwdm\b|pe.?coff|minifilter|\bioctl\b|"
                 r"sysinternals|msdn|microsoft|ntfs|\betw\b|windbg|\bcom\b|\bclr\b|\bwmi\b|"
                 r"component object model|\bdcom\b|\bpe\b|\bdlls?\b|winsock"),
@@ -118,7 +120,7 @@ TOPIC_RULES = [
                    r"xorshift|mersenne|information theor|entropy\b|shannon|\bfft\b|"
                    r"fourier|polynomial|mathemat|theorem|\bprimes?\b|trigonometr|"
                    r"\btrig\b|differential equation|simplex|integral|geometr|"
-                   r"\bblas\b|lapack|quantile"),
+                   r"\bblas\b|lapack|quantile|cronbach|likert"),
     ("strings-text", r"\bstrings?\b|suffix|fm-index|regex|regular expression|unicode|"
                      r"\butf-?\d*\b|full-?text|pattern match|substring|text (search|processing)|"
                      r"edit distance|levenshtein|automat|lexic|tokeniz|dictionar|vocabular"),
@@ -149,10 +151,11 @@ TOPIC_RULES = [
     ("data-science", r"\bpandas\b|numpy|scipy|matplotlib|\bcudf\b|rapids|data (science|"
                      r"mining|stream)|analytics|visualiz|treemap|\bcharts?\b|plot|"
                      r"r packages?|r extensions|\bcran\b|dataframe|outlier|pagerank|"
-                     r"frequent items|\btime series\b"),
+                     r"frequent items|\btime series\b|data (analysis|science)"),
     ("history-retro", r"history|\bdec\b|jovial|oral histor|retrospective|obituar|"
                       r"\bsega\b|playstation|nintendo|atari|commodore|amiga|\bcray\b|"
                       r"computer history museum|folklore|downfall"),
+    ("linguistics", r"corpus|linguistics|language"),
 ]
 TOPICS = [name for name, _ in TOPIC_RULES] + ["misc"]
 _COMPILED_RULES = [(name, re.compile(pat, re.I)) for name, pat in TOPIC_RULES]
