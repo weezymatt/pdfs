@@ -52,6 +52,7 @@ MONTHS = {
 # Topic rules are matched case-insensitively against the full relative path,
 # so folder names count.  A file collects every matching topic; none -> misc.
 
+# TODO: NLP, AI, Linguistics
 TOPIC_RULES = [
     ("hashing", r"hash|cuckoo|hopscotch|sha-?\d|blake2|keccak|md5|\bcrc\b|checksum"),
     ("data-structures", r"b-?trees?\b|\btries?\b|\bheaps?\b|skip list|bloom|succinct|"
