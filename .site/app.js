@@ -4,7 +4,7 @@
    that we re-render the full result list on every change. */
 "use strict";
 
-const REPO = "tpn/pdfs";
+const REPO = "weezymatt/pdfs";
 const BRANCH = "master";
 const $ = (sel) => document.querySelector(sel);
 
