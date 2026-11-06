@@ -156,6 +156,7 @@ TOPIC_RULES = [
                       r"\bsega\b|playstation|nintendo|atari|commodore|amiga|\bcray\b|"
                       r"computer history museum|folklore|downfall"),
     ("linguistics", r"corpus|linguistics|language"),
+    ("machine-translation", r"bleu|machine translation"),
 ]
 TOPICS = [name for name, _ in TOPIC_RULES] + ["misc"]
 _COMPILED_RULES = [(name, re.compile(pat, re.I)) for name, pat in TOPIC_RULES]
